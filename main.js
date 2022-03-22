@@ -2,7 +2,7 @@ const data = document.querySelector("#data");
 const qr = document.querySelector("#qr");
 
 data.addEventListener("keyup" , e =>{
-    {
+    if(e.code === "Enter"){
     qr.innerHTML = "";
     const href = data.value;
     // size of the image
